@@ -1,0 +1,25 @@
+caption {
+  font-family: 'Tilt Prism', cursive;
+  font-size: 100px;
+  font-style: italic;
+}
+
+table,
+th,
+td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  font-size: large;
+}
+th,
+td {
+  background-color: #96d4d4;
+}
+thead {
+  font-family: 'Tilt Prism', cursive;
+}
+h5 {
+  text-align: right;
+  font-size: small;
+  color: red;
+}

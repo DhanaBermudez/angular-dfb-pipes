@@ -1,0 +1,92 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap"
+  rel="stylesheet"
+/>
+<table>
+  <caption>
+    DATE PIPES
+    <div>
+      <h5>DHANA GRACE BERMUDEZ</h5>
+    </div>
+  </caption>
+  <thead>
+    <tr class="thead">
+      <th scope="col">Today's Date</th>
+      <th scope="col">Adding the Date Pipe</th>
+      <th scope="col">Parameters in Date</th>
+      <th scope="col">Chained Pipe</th>
+      <th scope="col">Asynch Pipe</th>
+      <th scope="col">Additional Date Pipes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Today's Date">{{ presentDate }}<br /></td>
+      <td data-label="Adding the Date Pipe">
+        <b>Today's date: </b>{{ presentDate | date }}<br />
+      </td>
+      <td data-label="Parameters in Date">
+        <b>This is a short date :</b>{{ presentDate | date: 'shortDate' }}<br />
+      </td>
+      <td data-label="Chained Pipe">
+        <b> Date with uppercase :</b>
+        {{ presentDate | date: 'fullDate' | uppercase }} <br />
+      </td>
+      <td data-label="Asynch Pipe">
+        <b>Seconds changing in Time : </b
+        >{{ todayO$ | async | date: 'mediumTime' }} <br />
+      </td>
+      <td data-label="Additional Date Pipes">
+        <b>This line shows the Fractional seconds: </b
+        >{{ presentDate | date: 'SSS' }} <br />
+      </td>
+    </tr>
+    <!--SECOND-->
+    <tr>
+      <td data-label="Today's Date"></td>
+      <td data-label="Adding the Date Pipe"></td>
+      <td data-label="Parameters in Date">
+        <b> This line shows the full date :</b>
+        {{ presentDate | date: 'fullDate' }} <br />
+      </td>
+      <td data-label="Chained Pipe">
+        <b> Date with lowercase :</b>
+        {{ presentDate | date: 'medium' | lowercase }}
+      </td>
+      <td data-label="Asynch Pipe"></td>
+      <td data-label="Additional Date Pipes">
+        <b>This line shows the minutes and seconds: </b
+        >{{ presentDate | date: 'mm:ss' }} <br />
+      </td>
+    </tr>
+    <!--THIRD-->
+    <tr>
+      <td data-label="Today's Date"></td>
+      <td data-label="Adding the Date Pipe"></td>
+      <td data-label="Parameters in Date">
+        <b>This will show a formatted date:</b>
+        {{ presentDate | date: 'M/dd/yyyy' }} <br />
+      </td>
+      <td data-label="Chained Pipe"></td>
+      <td data-label="Asynch Pipe"></td>
+      <td data-label="Additional Date Pipes">
+        <b>This line shows the week day standalone: </b>
+        {{ presentDate | date: 'cccc' }} <br />
+      </td>
+    </tr>
+    <!--4th-->
+    <tr>
+      <td data-label="Today's Date"></td>
+      <td data-label="Adding the Date Pipe"></td>
+      <td data-label="Parameters in Date">
+        <b>This indicates the hours and minutes:</b>
+        {{ presentDate | date: 'h:mm' }} <br />
+      </td>
+      <td data-label="Chained Pipe"></td>
+      <td data-label="Asynch Pipe"></td>
+      <td data-label="Additional Date Pipes"></td>
+    </tr>
+  </tbody>
+</table>
